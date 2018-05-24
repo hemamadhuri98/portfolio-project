@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+/* Center website */
+.main {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.main h1 {
+    color:green;
+    font-size: 50px;
+    word-break: break-all;
+}
+.main h2{
+    color:navy;
+}
+
+.r{
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.r,
+.r > .c {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.c{
+    float: left;
+    width: 25%;
+     height:10%;
+}
+
+/* Clear floats after rows */ 
+.r:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    padding: 10px;
+}
+.content1 {
+    padding: 10px;
+}
+.img{
+    height:200%;
+    width:100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .c {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .c {
+        width: 100%;
+    }
+}
