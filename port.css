@@ -52,10 +52,14 @@ body {
 }
 .content1 {
     padding: 10px;
+    text-align: center;
 }
 .img{
     height:200%;
     width:100%;
+}
+.main footer {
+    text-align: center;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
